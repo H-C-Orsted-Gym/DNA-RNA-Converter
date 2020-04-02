@@ -37,8 +37,10 @@
 			<TextBlock Name="Output"></TextBlock>
 		</Border>
 		<!-- DNA to RNA -->
-		<Button Name="ToRNA" Grid.Row="8" Grid.Column="2" Content="Convert to RNA" Click="ToRNA_Click"></Button>
+		<Button Name="ToRNA" Grid.Row="8" Grid.Column="1" Content="Convert to RNA" Click="ToRNA_Click"></Button>
 		<!-- RNA to DNA-->
-		<Button Name="ToDNA" Grid.Row="8" Grid.Column="4" Content="Convert to DNA"></Button>
+		<Button Name="ToDNA" Grid.Row="8" Grid.Column="3" Content="Convert to DNA" Click="ToDNA_Click"></Button>
+		<!-- Clear-->
+		<Button Name="Clear" Grid.Row="8" Grid.Column="5" Content="Clear fields" Click="Clear_Click"></Button>
 	</Grid>
 </Window>
