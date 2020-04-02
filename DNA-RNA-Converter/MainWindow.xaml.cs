@@ -24,5 +24,10 @@ namespace DNA_RNA_Converter
 		{
 			InitializeComponent();
 		}
+
+		private void ToRNA_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
 	}
 }

@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DNA_RNA_Converter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="RNA and DNA Converter" Icon="dna.ico"  Height="500" Width="800">
+	<Grid ShowGridLines="False">
+		<Grid.RowDefinitions>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<!-- Input -->
+		<TextBlock Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold">Input</TextBlock>
+		<TextBox Name="Input" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="5" TextWrapping="Wrap" Text="Enter your RNA or DNA here..."></TextBox>
+		<!-- Output -->
+		<TextBlock Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold">Ouput</TextBlock>
+		<Border BorderThickness="1" BorderBrush="Black" Grid.Row="5" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="5">
+			<TextBlock Name="Output"></TextBlock>
+		</Border>
+		<!-- DNA to RNA -->
+		<Button Name="ToRNA" Grid.Row="8" Grid.Column="2" Content="Convert to RNA" Click="ToRNA_Click"></Button>
+		<!-- RNA to DNA-->
+		<Button Name="ToDNA" Grid.Row="8" Grid.Column="4" Content="Convert to DNA"></Button>
+	</Grid>
 </Window>
