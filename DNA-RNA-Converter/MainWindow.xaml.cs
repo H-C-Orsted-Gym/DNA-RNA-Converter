@@ -29,7 +29,7 @@ namespace DNA_RNA_Converter
 		{
 			Converter convert = new Converter();
 
-			string inputText = Input.Text;
+			string inputText = Input.Text.Trim();
 
 			string result = convert.ConvertToRNA(inputText);
 
@@ -51,7 +51,7 @@ namespace DNA_RNA_Converter
 		{
 			Converter convert = new Converter();
 
-			string inputText = Input.Text;
+			string inputText = Input.Text.Trim();
 
 			string result = convert.ConvertToDNA(inputText);
 

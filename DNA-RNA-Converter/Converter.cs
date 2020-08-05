@@ -65,7 +65,6 @@ namespace DNA_RNA_Converter
 			}
 		}
 
-
 		public string ConvertToRNA(string input)
 		{
 			string inputStripped = input.Replace(" ", "");
@@ -77,11 +76,11 @@ namespace DNA_RNA_Converter
 
 				foreach (char c in inputEnter)
 				{
-					if (c.ToString() == "U" || c.ToString() == "T" || c.ToString() == "C" || c.ToString() == "G")
+					if (c.ToString() == "A" || c.ToString() == "T" || c.ToString() == "C" || c.ToString() == "G")
 					{
-						if (c.ToString() == "U")
+						if (c.ToString() == "A")
 						{
-							result = result + "A";
+							result = result + "U";
 						}
 						else if (c.ToString() == "T")
 						{
